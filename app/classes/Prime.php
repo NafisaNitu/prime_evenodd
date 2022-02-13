@@ -17,7 +17,8 @@ class Prime
             $this->inputNumber = $post['input_number'];
     }
 
-    public function  index(){
+    public function  index()
+    {
         if ($this->inputNumber == 1)
         {
             return $this->z =0;
@@ -28,7 +29,8 @@ class Prime
             {
                 return $this->z = 0;
             }
-            return $this->z =1;
+
         }
+        return $this->z =1;
     }
 }

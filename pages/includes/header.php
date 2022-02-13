@@ -17,8 +17,11 @@
             <li class="nav-item"><a href="action.php?pages=even-odd" class="nav-link">Odd Even</a></li>
             <li class="nav-item"><a href="action.php?pages=prime" class="nav-link">Prime</a></li>
             <li class="nav-item"><a href="" class="nav-link">Prime</a></li>
-            <li class="nav-item"><a href="" class="nav-link">All Product</a></li>
+            <li class="nav-item"><a href="action.php?pages=all-product" class="nav-link">All Product</a></li>
 
+            <?php foreach ($categories as $category) { ?>
+                <li class="nav-item"><a href="action.php?pages=all-product" class="nav-link"><?php echo $category['name']; ?>></a></li>
+            <?php } ?>
         </ul>
     </div>
 </nav>

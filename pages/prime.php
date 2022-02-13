@@ -20,7 +20,7 @@
                             <div class="form-group row">
                                 <label for="" class="col-md-4 col-form-label">Result</label>
                                 <div class="col-md-8">
-                                    <input type="text" readonly class="form-control" value="<?php echo isset($result ==1) ? 'prime Number' :'non-prime number' ?>">
+                                    <input type="text" readonly class="form-control" value="<?php echo (isset($result)&& $result ==1) ? 'prime Number' :'non-prime number' ?>">
                                 </div>
                             </div>
                             <div class="form-group row">
